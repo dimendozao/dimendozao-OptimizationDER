@@ -1,0 +1,21 @@
+,$x$,F,I/S,$\overline{SSE}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$\overline{SSE}$,RRM,AI,$\cellcolor{green}1.91e-25$,$1.25e-01$,$2.14e-12$,$2.17e-12$,$1.11e-49$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}2.35e-03$,$6.96e-12$,$6.96e-12$,$0.e+00$
+,Inf1,RRM,AI,$1.91e-25$,$1.25e-01$,$\cellcolor{green}2.14e-12$,$2.17e-12$,$1.11e-49$
+,Inf2,RRM,AI,$1.91e-25$,$1.25e-01$,$2.14e-12$,$\cellcolor{green}2.17e-12$,$1.11e-49$
+,$\Pi |x|$,RRM,AI,$1.91e-25$,$1.25e-01$,$2.14e-12$,$2.17e-12$,$\cellcolor{green}1.11e-49$
+\multirow{5}{*}{IEEE69},$\overline{SSE}$,RRM,AI,$\cellcolor{green}7.02e-22$,$2.59e+00$,$1.67e-10$,$2.10e-10$,$6.38e-41$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}1.90e-03$,$3.79e-10$,$3.79e-10$,$0.e+00$
+,Inf1,RRM,AI,$7.02e-22$,$2.59e+00$,$\cellcolor{green}1.67e-10$,$2.10e-10$,$6.38e-41$
+,Inf2,RRM,AI,$7.02e-22$,$2.59e+00$,$1.67e-10$,$\cellcolor{green}2.10e-10$,$6.38e-41$
+,$\Pi |x|$,RRM,AI,$7.02e-22$,$2.59e+00$,$1.67e-10$,$2.10e-10$,$\cellcolor{green}6.38e-41$
+\multirow{5}{*}{SA},$\overline{SSE}$,PBIM,AI,$\cellcolor{green}1.8e-16$,$3.1e-02$,$8.81e-08$,$8.81e-08$,$4.32e-32$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}1.16e-03$,$7.73e-08$,$7.73e-08$,$0.e+00$
+,Inf1,PM,AI,$3.48e-16$,$3.1e-02$,$\cellcolor{green}1.43e-10$,$1.68e-10$,$2.6e-37$
+,Inf2,PM,AI,$3.48e-16$,$3.1e-02$,$1.43e-10$,$\cellcolor{green}1.68e-10$,$2.6e-37$
+,$\Pi |x|$,RM,AI,$3.48e-16$,$1.6e-02$,$1.99e-10$,$1.87e-10$,$\cellcolor{green}2.07e-37$
+\multirow{5}{*}{CA141},$\overline{SSE}$,PBIM,AI,$\cellcolor{green}6.7e-16$,$7.8e-02$,$1.46e-07$,$1.46e-07$,$1.12e-30$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}2.50e-03$,$2.7e-09$,$2.7e-09$,$0.e+00$
+,Inf1,RRBIM,AI,$1.36e-15$,$1.72e-01$,$\cellcolor{green}2.32e-09$,$1.57e-07$,$8.48e-32$
+,Inf2,MAT,*,$0.e+00$,$2.50e-03$,$2.7e-09$,$\cellcolor{green}2.7e-09$,$0.e+00$
+,$\Pi |x|$,RRBIM,AI,$1.36e-15$,$1.72e-01$,$2.32e-09$,$1.57e-07$,$\cellcolor{green}8.48e-32$

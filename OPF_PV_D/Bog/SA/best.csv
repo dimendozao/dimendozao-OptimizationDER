@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{SA},$P_{loss}$,RM,AB,$\cellcolor{green}5.21e-02$,$3.29e+01$,$3.50e-07$,$3.50e-07$,$2.10e-13$
+,$t[s]$,PBIM,AB,$5.21e-02$,$\cellcolor{green}3.18e+01$,$3.54e-07$,$3.54e-07$,$2.08e-13$
+,Inf1,PM,AB,$5.21e-02$,$3.52e+01$,$\cellcolor{green}3.42e-07$,$3.42e-07$,$2.15e-13$
+,Inf2,PM,AB,$5.21e-02$,$3.52e+01$,$3.42e-07$,$\cellcolor{green}3.42e-07$,$2.15e-13$
+,$\Pi |x|$,PBIM,AB,$5.21e-02$,$3.18e+01$,$3.54e-07$,$3.54e-07$,$\cellcolor{green}2.08e-13$

@@ -1,0 +1,26 @@
+\begin{tabular}{|c| c c c c c c c c|}
+\toprule
+ & $x$ & F & I/S & $\overline{SSE}$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+\multirow{5}{*}{IEEE33} & $\overline{SSE}$ & RRM & AI & $\cellcolor{green}2.52e-25$ & $1.88e-01$ & $1.79e-12$ & $2.45e-12$ & $2.09e-49$ \\
+NaN & $t[s]$ & MAT & * & $0.e+00$ & $\cellcolor{green}8.83e-03$ & $1.11e-11$ & $1.11e-11$ & $0.e+00$ \\
+NaN & Inf1 & RRM & AI & $2.52e-25$ & $1.88e-01$ & $\cellcolor{green}1.79e-12$ & $2.45e-12$ & $2.09e-49$ \\
+NaN & Inf2 & RRM & AI & $2.52e-25$ & $1.88e-01$ & $1.79e-12$ & $\cellcolor{green}2.45e-12$ & $2.09e-49$ \\
+NaN & $\Pi |x|$ & RRM & AI & $2.52e-25$ & $1.88e-01$ & $1.79e-12$ & $2.45e-12$ & $\cellcolor{green}2.09e-49$ \\
+\multirow{5}{*}{IEEE69} & $\overline{SSE}$ & RRM & AI & $\cellcolor{green}9.32e-23$ & $1.41e+00$ & $9.90e-11$ & $1.89e-10$ & $2.45e-42$ \\
+NaN & $t[s]$ & REBF & G & $1.72e-03$ & $\cellcolor{green}2.20e-02$ & $9.46e-07$ & $1.49e+01$ & $5.33e-10$ \\
+NaN & Inf1 & RRM & AI & $9.32e-23$ & $1.41e+00$ & $\cellcolor{green}9.90e-11$ & $1.89e-10$ & $2.45e-42$ \\
+NaN & Inf2 & RRM & AI & $9.32e-23$ & $1.41e+00$ & $9.90e-11$ & $\cellcolor{green}1.89e-10$ & $2.45e-42$ \\
+NaN & $\Pi |x|$ & RRM & AI & $9.32e-23$ & $1.41e+00$ & $9.90e-11$ & $1.89e-10$ & $\cellcolor{green}2.45e-42$ \\
+\multirow{5}{*}{SA} & $\overline{SSE}$ & PBIM & AI & $\cellcolor{green}1.04e-12$ & $3.1e-02$ & $3.05e-06$ & $3.05e-06$ & $2.98e-25$ \\
+NaN & $t[s]$ & MAT & * & $0.e+00$ & $\cellcolor{green}1.94e-03$ & $2.97e-08$ & $2.97e-08$ & $0.e+00$ \\
+NaN & Inf1 & MAT & * & $0.e+00$ & $1.94e-03$ & $\cellcolor{green}2.97e-08$ & $2.97e-08$ & $0.e+00$ \\
+NaN & Inf2 & MAT & * & $0.e+00$ & $1.94e-03$ & $2.97e-08$ & $\cellcolor{green}2.97e-08$ & $0.e+00$ \\
+NaN & $\Pi |x|$ & RBIM & AI & $1.16e-12$ & $1.6e-02$ & $3.44e-06$ & $3.44e-06$ & $\cellcolor{green}2.20e-25$ \\
+\multirow{5}{*}{CA141} & $\overline{SSE}$ & PBIM & AI & $\cellcolor{green}1.16e-12$ & $6.2e-02$ & $3.31e-06$ & $3.31e-06$ & $7.83e-25$ \\
+NaN & $t[s]$ & MAT & * & $0.e+00$ & $\cellcolor{green}1.84e-02$ & $4.17e-08$ & $4.17e-08$ & $0.e+00$ \\
+NaN & Inf1 & RRBIM & AI & $3.04e-12$ & $1.09e-01$ & $\cellcolor{green}3.13e-09$ & $3.02e-06$ & $3.13e-27$ \\
+NaN & Inf2 & MAT & * & $0.e+00$ & $1.84e-02$ & $4.17e-08$ & $\cellcolor{green}4.17e-08$ & $0.e+00$ \\
+NaN & $\Pi |x|$ & RRBIM & AI & $3.04e-12$ & $1.09e-01$ & $3.13e-09$ & $3.02e-06$ & $\cellcolor{green}3.13e-27$ \\
+\bottomrule
+\end{tabular}

@@ -1,0 +1,19 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ & I/S & $\overline{SSE}$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+PM & AI & \cellcolor{yellow}$1.40e-14$ & $2.5e-01$ & $1.7e-06$ & \cellcolor{red}$1.7e-06$ & \cellcolor{yellow}$1.01e-26$ \\
+RM & AI & $1.80e-14$ & $2.97e-01$ & $2.00e-06$ & $2.00e-06$ & $2.14e-26$ \\
+RRM & AI & \cellcolor{green}$1.4e-17$ & $6.03e+01$ & \cellcolor{green}$5.03e-11$ & \cellcolor{green}$5.7e-11$ & \cellcolor{green}$2.42e-36$ \\
+PBIM & AI & \cellcolor{red}$1.40e-14$ & $2.66e-01$ & $1.7e-06$ & $1.7e-06$ & \cellcolor{red}$1.07e-26$ \\
+RBIM & AI & $1.80e-14$ & $2.97e-01$ & $2.00e-06$ & $2.00e-06$ & $2.14e-26$ \\
+RRBIM & AI & $9.29e-12$ & $2.65e-01$ & \cellcolor{yellow}$6.02e-09$ & $3.09e-05$ & $4.58e-25$ \\
+BF & G & $1.15e-02$ & $5.3e-01$ & $1.42e-05$ & $2.59e+02$ & $2.25e-05$ \\
+RERCM & CM & $2.62e-10$ & $2.14e+00$ & $3.48e-05$ & $1.92e-04$ & $3.75e-18$ \\
+RERRM & CM & $1.15e-02$ & $2.91e+00$ & $2.16e-04$ & $2.59e+02$ & $1.87e-03$ \\
+RERCBIM & CM & $1.96e-09$ & \cellcolor{yellow}$7.8e-02$ & $1.30e-04$ & $5.82e-04$ & $1.16e-17$ \\
+RERRBIM & CM & $7.66e-10$ & \cellcolor{red}$7.8e-02$ & $6.68e-05$ & $3.33e-04$ & $1.33e-18$ \\
+REBF & G & $1.15e-02$ & $1.24e-01$ & $6.22e-06$ & $2.59e+02$ & $2.30e-06$ \\
+MAT & * & $0.e+00$ & \cellcolor{green}$3.51e-02$ & \cellcolor{red}$9.99e-08$ & \cellcolor{yellow}$9.99e-08$ & $0.e+00$ \\
+\bottomrule
+\end{tabular}

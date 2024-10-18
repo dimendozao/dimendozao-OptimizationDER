@@ -1,0 +1,19 @@
+\begin{tabular}{|c c|}
+\toprule
+Variables & Values \\
+\midrule
+Formulation & Meta \\
+$f_{o}$ & $-8.6096e+01$ \\
+$P_{loss}$ & $1.3872e+01$ \\
+$-\Sigma p(DC)$ & $-1.0101e+02$ \\
+$\Sigma p(I_{pv})$ & $1.0467e+00$ \\
+$(Loc1,Cap1)$ & $(4,1.6447e-01)$ \\
+$(Loc2,Cap2)$ & $(14,1.1693e+00)$ \\
+$(Loc3,Cap3)$ & $(19,4.2796e-01)$ \\
+$(Loc4,Cap4)$ & $(35,0.e+00)$ \\
+$(Loc5,Cap5)$ & $(38,4.1983e+00)$ \\
+$\Sigma (z_{i}^{pv},CP_{i})$ & $(5,5.96e+00)$ \\
+$V_{max}$ & $1.e+00$ \\
+$V_{min}$ & $9.0598e-01$ \\
+\bottomrule
+\end{tabular}

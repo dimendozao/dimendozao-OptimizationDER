@@ -1,0 +1,13 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ &  & $\overline{SSE}$ & Time & Inf1 & Inf2 & $\Sigma$ \\
+Type & I/S &  &  &  &  &  \\
+\midrule
+Convex & G & 0 & 1 & 0 & 0 & 1 \\
+\cline{1-7}
+MAT & MAT & 0 & 27 & 7 & 14 & 48 \\
+\cline{1-7}
+Non-Convex & AI & 28 & 0 & 21 & 14 & 63 \\
+\cline{1-7}
+\bottomrule
+\end{tabular}

@@ -1,0 +1,21 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,RERCM,CM,$\cellcolor{green}1.05e-01$,$1.25e-01$,$6.86e-05$,$2.31e-05$,$2.08e-11$
+,$t[s]$,RERCM,CM,$1.05e-01$,$\cellcolor{green}1.25e-01$,$6.86e-05$,$2.31e-05$,$2.08e-11$
+,Inf1,RRBIM,AB,$1.05e-01$,$1.89e+00$,$\cellcolor{green}3.33e-10$,$3.34e-10$,$2.20e-20$
+,Inf2,RRBIM,AB,$1.05e-01$,$1.89e+00$,$3.33e-10$,$\cellcolor{green}3.34e-10$,$2.20e-20$
+,$\Pi |x|$,RRBIM,AB,$1.05e-01$,$1.89e+00$,$3.33e-10$,$3.34e-10$,$\cellcolor{green}2.20e-20$
+\multirow{5}{*}{IEEE69},$P_{loss}$,PM,AB,$\cellcolor{green}1.13e-01$,$3.75e-01$,$4.02e-08$,$4.02e-08$,$6.84e-17$
+,$t[s]$,RM,AB,$1.13e-01$,$\cellcolor{green}3.44e-01$,$4.72e-08$,$4.72e-08$,$8.65e-17$
+,Inf1,RRM,AB,$1.13e-01$,$8.28e+00$,$\cellcolor{green}1.47e-10$,$4.22e-08$,$5.82e-18$
+,Inf2,RRBIM,AB,$1.13e-01$,$9.45e+00$,$1.53e-10$,$\cellcolor{green}6.8e-09$,$1.11e-18$
+,$\Pi |x|$,RRBIM,AB,$1.13e-01$,$9.45e+00$,$1.53e-10$,$6.8e-09$,$\cellcolor{green}1.11e-18$
+\multirow{5}{*}{SA},$P_{loss}$,PM,AB,$\cellcolor{green}1.95e-03$,$1.88e-01$,$1.58e-10$,$2.02e-10$,$1.17e-23$
+,$t[s]$,RBIM,AB,$1.95e-03$,$\cellcolor{green}1.87e-01$,$1.42e-10$,$1.69e-10$,$8.76e-24$
+,Inf1,RBIM,AB,$1.95e-03$,$1.87e-01$,$\cellcolor{green}1.42e-10$,$1.69e-10$,$8.76e-24$
+,Inf2,RBIM,AB,$1.95e-03$,$1.87e-01$,$1.42e-10$,$\cellcolor{green}1.69e-10$,$8.76e-24$
+,$\Pi |x|$,RBIM,AB,$1.95e-03$,$1.87e-01$,$1.42e-10$,$1.69e-10$,$\cellcolor{green}8.76e-24$
+\multirow{5}{*}{CA141},$P_{loss}$,RBIM,AB,$\cellcolor{green}3.17e-01$,$3.42e+01$,$1.41e-06$,$1.41e-06$,$2.17e-11$
+,$t[s]$,PBIM,AB,$3.17e-01$,$\cellcolor{green}1.67e+00$,$1.27e-07$,$1.29e-07$,$8.68e-15$
+,Inf1,RRBIM,AB,$3.17e-01$,$6.50e+01$,$\cellcolor{green}1.26e-09$,$2.17e-06$,$5.64e-14$
+,Inf2,Meta-WOA,WOA_PAR,$3.21e-01$,$1.91e+01$,$2.10e-08$,$\cellcolor{green}1.66e-08$,$2.14e-15$
+,$\Pi |x|$,Meta-GA,GA_PAR,$3.17e-01$,$8.14e+00$,$1.85e-08$,$1.84e-08$,$\cellcolor{green}8.83e-16$

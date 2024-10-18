@@ -1,0 +1,2 @@
+Se agregaron restricciones de perdidas positivas
+las restricciones SOCP no convexas se limitaron a todas las lineas existentes.

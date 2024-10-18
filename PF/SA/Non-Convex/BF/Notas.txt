@@ -1,0 +1,1 @@
+se agregaron limites arbitrarios a las variables qik, pk y qk permitiendo valores negativos

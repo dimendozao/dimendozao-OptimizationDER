@@ -1,0 +1,42 @@
+ npwlb=12
+        
+socx=np.zeros(npwlb)
+socy=np.zeros(npwlb)
+        
+for i in range(npwlb):
+	if i==0:
+		socx[i]=-1
+		socy[i]=1/((3/2)-((1/2)*np.sqrt(1-socx[i])))
+		socx[i+1]=0.3
+		socy[i+1]=(1/2)+((1/2)*np.sqrt(1-socx[i+1]))    
+	elif i>1 and i<=7:
+		socx[i]=0.3+((i-1)*((0.9-0.3)/6))
+		socy[i]=((1/2)+((1/2)*np.sqrt(1-socx[i])))
+	elif i>=8:
+		socx[i]=0.9+((i-7)*((1-0.9)/4))
+		socy[i]=((1/2)+((1/2)*np.sqrt(1-socx[i])))
+        
+socm=np.divide(np.diff(socy),np.diff(socx))
+socx=socx[1:-1]
+
+param np;
+param nm;
+
+ampl.get_parameter("np").set(len(socx))
+ampl.get_parameter("nm").set(len(socm))  
+
+set P=1..np;
+set M=1..nm;
+
+
+param slopes{M};
+param points{P};
+
+ampl.get_parameter("slopes").set_values(socm)
+ampl.get_parameter("points").set_values(socx)
+
+
+subject to PBER{h in H}:
+	pbre[h]=<<{p in P} points[p];{m in M} slopes[m]>>pbr[h];
+
+

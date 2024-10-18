@@ -1,0 +1,21 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,Meta-GWO,GWO_PAR,$\cellcolor{green}2.32e+00$,$9.81e+01$,$2.14e-08$,$2.14e-08$,$1.04e-13$
+,$t[s]$,Meta-GA,GA_PAR,$2.38e+00$,$\cellcolor{green}8.42e+01$,$3.26e-08$,$3.25e-08$,$2.12e-13$
+,Inf1,Meta-GWO,GWO_PAR,$2.32e+00$,$9.81e+01$,$\cellcolor{green}2.14e-08$,$2.14e-08$,$1.04e-13$
+,Inf2,Meta-GWO,GWO_PAR,$2.32e+00$,$9.81e+01$,$2.14e-08$,$\cellcolor{green}2.14e-08$,$1.04e-13$
+,$\Pi |x|$,Meta-GWO,GWO_PAR,$2.32e+00$,$9.81e+01$,$2.14e-08$,$2.14e-08$,$\cellcolor{green}1.04e-13$
+\multirow{5}{*}{IEEE69},$P_{loss}$,Meta-GA,GA_PAR,$\cellcolor{green}2.48e+00$,$9.5e+01$,$3.04e-08$,$3.09e-08$,$2.21e-13$
+,$t[s]$,Meta-GA,GA_PAR,$2.48e+00$,$\cellcolor{green}9.5e+01$,$3.04e-08$,$3.09e-08$,$2.21e-13$
+,Inf1,Meta-GWO,GWO_PAR,$2.49e+00$,$1.16e+02$,$\cellcolor{green}2.98e-08$,$3.05e-08$,$2.62e-13$
+,Inf2,Meta-GWO,GWO_PAR,$2.49e+00$,$1.16e+02$,$2.98e-08$,$\cellcolor{green}3.05e-08$,$2.62e-13$
+,$\Pi |x|$,Meta-GA,GA_PAR,$2.48e+00$,$9.5e+01$,$3.04e-08$,$3.09e-08$,$\cellcolor{green}2.21e-13$
+\multirow{5}{*}{SA},$P_{loss}$,Meta-GWO,GWO_PAR,$\cellcolor{green}4.11e-02$,$8.31e+01$,$3.23e-07$,$3.21e-07$,$3.54e-13$
+,$t[s]$,Meta-PSO,PSO_PAR,$4.11e-02$,$\cellcolor{green}6.89e+01$,$3.23e-07$,$3.20e-07$,$2.93e-13$
+,Inf1,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$\cellcolor{green}3.23e-07$,$3.20e-07$,$2.93e-13$
+,Inf2,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$3.23e-07$,$\cellcolor{green}3.20e-07$,$2.93e-13$
+,$\Pi |x|$,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$3.23e-07$,$3.20e-07$,$\cellcolor{green}2.93e-13$
+\multirow{5}{*}{CA141},$P_{loss}$,PM,AB,$\cellcolor{green}6.74e+00$,$2.63e+03$,$3.11e-06$,$3.10e-06$,$1.71e-07$
+,$t[s]$,REBF,G,$6.74e+00$,$\cellcolor{green}1.21e+01$,$1.22e-07$,$2.47e-06$,$2.47e-11$
+,Inf1,RRM,AB,$6.74e+00$,$3.43e+03$,$\cellcolor{green}4.58e-08$,$3.38e-06$,$3.58e-09$
+,Inf2,Meta-PSO,PSO_PAR,$6.77e+00$,$1.18e+02$,$1.7e-07$,$\cellcolor{green}5.58e-08$,$7.55e-12$
+,$\Pi |x|$,Meta-PSO,PSO_PAR,$6.77e+00$,$1.18e+02$,$1.7e-07$,$5.58e-08$,$\cellcolor{green}7.55e-12$

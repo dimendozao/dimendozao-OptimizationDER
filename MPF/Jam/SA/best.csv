@@ -1,0 +1,6 @@
+,$x$,F,I/S,$\overline{SSE}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{SA},$\overline{SSE}$,PBIM,AI,$\cellcolor{green}7.21e-12$,$2.81e-01$,$3.71e-05$,$3.71e-05$,$2.79e-21$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}2.22e-02$,$8.72e-07$,$8.72e-07$,$0.e+00$
+,Inf1,MAT,*,$0.e+00$,$2.22e-02$,$\cellcolor{green}8.72e-07$,$8.72e-07$,$0.e+00$
+,Inf2,MAT,*,$0.e+00$,$2.22e-02$,$8.72e-07$,$\cellcolor{green}8.72e-07$,$0.e+00$
+,$\Pi |x|$,PBIM,AI,$7.21e-12$,$2.81e-01$,$3.71e-05$,$3.71e-05$,$\cellcolor{green}2.79e-21$

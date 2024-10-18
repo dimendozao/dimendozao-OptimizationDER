@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{CA141},$P_{loss}$,RBIM,AB,$\cellcolor{green}3.17e-01$,$3.42e+01$,$1.41e-06$,$1.41e-06$,$2.17e-11$
+,$t[s]$,PBIM,AB,$3.17e-01$,$\cellcolor{green}1.67e+00$,$1.27e-07$,$1.29e-07$,$8.68e-15$
+,Inf1,RRBIM,AB,$3.17e-01$,$6.50e+01$,$\cellcolor{green}1.26e-09$,$2.17e-06$,$5.64e-14$
+,Inf2,Meta-WOA,WOA_PAR,$3.21e-01$,$1.91e+01$,$2.10e-08$,$\cellcolor{green}1.66e-08$,$2.14e-15$
+,$\Pi |x|$,Meta-GA,GA_PAR,$3.17e-01$,$8.14e+00$,$1.85e-08$,$1.84e-08$,$\cellcolor{green}8.83e-16$

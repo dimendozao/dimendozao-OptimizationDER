@@ -1,0 +1,6 @@
+solución inexacta (infactible)
+
+presolve On
+
+q limite inferior 0 (normal -100)
+

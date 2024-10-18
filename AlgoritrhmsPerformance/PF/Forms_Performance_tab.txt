@@ -1,0 +1,23 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ &  & $\overline{SSE}$ & Time & Inf1 & Inf2 & $\Sigma$ \\
+Type & F &  &  &  &  &  \\
+\midrule
+\multirow[t]{5}{*}{Convex} & REBF & 0 & 1 & 0 & 0 & 1 \\
+ & RERCBIM & 0 & 0 & 0 & 0 & 0 \\
+ & RERCM & 0 & 0 & 0 & 0 & 0 \\
+ & RERRBIM & 0 & 0 & 0 & 0 & 0 \\
+ & RERRM & 0 & 0 & 0 & 0 & 0 \\
+\cline{1-7}
+MAT & MAT & 0 & 27 & 7 & 14 & 48 \\
+\cline{1-7}
+\multirow[t]{7}{*}{Non-Convex} & BF & 0 & 0 & 0 & 0 & 0 \\
+ & PBIM & 7 & 0 & 0 & 0 & 7 \\
+ & PM & 2 & 0 & 1 & 1 & 4 \\
+ & RBIM & 0 & 0 & 0 & 0 & 0 \\
+ & RM & 1 & 0 & 0 & 0 & 1 \\
+ & RRBIM & 1 & 0 & 3 & 1 & 5 \\
+ & RRM & 17 & 0 & 17 & 12 & 46 \\
+\cline{1-7}
+\bottomrule
+\end{tabular}

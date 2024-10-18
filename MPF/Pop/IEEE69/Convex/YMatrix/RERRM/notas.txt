@@ -1,0 +1,8 @@
+Se resolvio el problema dual
+
+las variables se hicieron dispersas.
+
+las restricciones conicas se hicieron dispersas
+
+no se hizo multiples optimizaciones.
+

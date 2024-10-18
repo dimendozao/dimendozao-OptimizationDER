@@ -1,0 +1,8 @@
+Se resolvió con AMPL SCIP
+
+
+las sumas en el balance de potencia se hicieron dispersas
+las restricciones conicas se hicioeron dispersas
+las restricciones hermitianas se hicieron dispersas
+las variables se hicieron dispersas.
+se agregaron restricciones de perdidas positivas (sg+spv-sd>=0)

@@ -1,0 +1,5 @@
+Se agrego restricciones de perdidas positivas:
+(pg+(pv*rad)-pd>=0)
+(qg-pd>=0)
+
+se resolvio con cvxpy y mosek 

@@ -1,0 +1,238 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Thu Oct 19 08:11:35 2023
+
+@author: diego
+"""
+
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
+import cvxpy as cvx
+from scipy.io import loadmat
+
+case='CA141'
+city='Pop'
+city1='POP'
+problem='PFN'
+
+
+"----- Read the database -----"
+branch = pd.read_csv('C:\\Users\\diego\\OneDrive\\Desktop\\aLL\\PhD\\Tesis\\Systems\\'+case+'Branch.csv')
+bus= pd.read_csv('C:\\Users\\diego\\OneDrive\\Desktop\\aLL\\PhD\\Tesis\\Systems\\'+case+'Bus.csv')
+gen= pd.read_csv('C:\\Users\\diego\\OneDrive\\Desktop\\aLL\\PhD\\Tesis\\Systems\\'+case+'Gen.csv')
+
+mat= loadmat('C:\\Users\\diego\\OneDrive\\Desktop\\aLL\\PhD\\Tesis\\Data\\Demanda\\'+city+'\\ClusterMeans_'+city1+'.mat')
+dmeans=np.squeeze(mat['clustermeans']).T
+
+mat= loadmat('C:\\Users\\diego\\OneDrive\\Desktop\\aLL\\PhD\\Tesis\\Data\\Demanda\\'+city+'\\'+case+'_'+city+'_'+'ClusterNode.mat')
+cnode=np.squeeze(mat['clusternode'])
+
+cnode[0]=1
+cnode=cnode-1
+
+dem=np.mean(dmeans,axis=0)
+
+num_lines = len(branch)
+num_nodes=len(bus)
+iref=np.where(bus['type']==3)[0][0]
+
+ngen=np.sum(bus['type']==2)
+sgen=np.zeros(num_nodes)
+vgen=np.zeros(num_nodes)
+
+vmax=np.array(bus['vmax'])
+vmin=np.array(bus['vmin'])
+
+sd=np.zeros(num_nodes,dtype='complex')
+
+if ngen>0:
+    for i in range(ngen):
+        sgen[bus['i'][i]-1]=gen['pi'][i]
+        vmax[bus['i'][i]-1]=gen['vst'][i]
+        vmin[bus['i'][i]-1]=gen['vst'][i]
+
+vmax=vmax+0.1
+vmin=vmin-0.1
+
+vmax[iref]=1
+vmin[iref]=1
+
+prefmax=np.zeros(num_nodes)
+qrefmax=np.zeros(num_nodes)
+
+prefmin=np.zeros(num_nodes)
+qrefmin=np.zeros(num_nodes)
+
+prefmax[iref]=gen['pmax'][np.where(np.array(gen['i'])==iref+1)[0][0]]
+prefmin[iref]=gen['pmin'][np.where(np.array(gen['i'])==iref+1)[0][0]]
+qrefmax[iref]=gen['qmax'][np.where(np.array(gen['i'])==iref+1)[0][0]]
+qrefmin[iref]=np.maximum(0,gen['qmin'][np.where(np.array(gen['i'])==iref+1)[0][0]])
+
+for k in range(num_lines):
+    sd[branch['j'][k]-1]=branch['pj'][k]+1j*branch['qj'][k]
+
+for i in range(num_nodes):
+    sd[i]=sd[i]*dem[cnode[i]]
+
+ym=np.zeros([num_nodes,num_nodes],dtype='complex')
+
+for k in range(num_lines):
+    fr=branch['i'][k]-1
+    to=branch['j'][k]-1
+    ym[fr][to]=-1/(branch['r'][k] + 1j*branch['x'][k])
+    ym[to][fr]=-1/(branch['r'][k] + 1j*branch['x'][k])    
+
+for i in range(num_nodes):
+    ym[i][i]=-np.sum(ym[i])
+    
+wrmax=np.zeros([num_nodes,num_nodes])
+wrmin=np.zeros([num_nodes,num_nodes])
+wimax=np.zeros([num_nodes,num_nodes])
+wimin=np.zeros([num_nodes,num_nodes])
+
+idx=[]
+
+for i in range(num_nodes):
+    for j in range(num_nodes):
+        if np.abs(ym[i][j])!=0:
+            idx+=[(i,j)]
+        if i==j:
+            wrmax[i][j]=vmax[i]*vmax[j]
+            wrmin[i][j]=vmin[i]*vmin[j]
+        else:            
+            wrmax[i][j]=vmax[i]*vmax[j]
+            wrmin[i][j]=vmin[i]*vmin[j]
+            wimax[i][j]=vmax[i]*vmax[j]
+            wimin[i][j]=-vmax[i]*vmax[j] 
+            
+svect=np.zeros(num_nodes)
+svect[iref]=1
+
+"----- Optimization model -----"
+
+sref = cvx.Variable(complex=True,name='sref')
+w = cvx.Variable((num_nodes,num_nodes),hermitian=True,name='wij')
+
+"-------Constraint Construction-------- "
+res=[]
+
+res+=   [cvx.real(w)<=wrmax]
+res+=   [cvx.real(w)>=wrmin]
+res+=   [cvx.imag(w)<=wimax]
+res+=   [cvx.imag(w)>=wimin]   
+
+res+=[(sref*svect)+sgen-sd==cvx.diag(w@ym.conjugate())]        
+
+
+res +=  [cvx.real(sref)>=prefmin[iref]]
+res +=  [cvx.real(sref)<=prefmax[iref]]
+res +=  [cvx.imag(sref)>=qrefmin[iref]]
+res +=  [cvx.imag(sref)<=qrefmax[iref]]
+
+for i in range(num_nodes):
+    for j in range(num_nodes):
+        if np.abs(ym[i][j])!=0:        
+            up=cvx.real(w[i][i])+cvx.real(w[j][j])
+            um=cvx.real(w[i][i])-cvx.real(w[j][j])
+            st=cvx.vstack([2*cvx.real(w[i][j]),2*cvx.imag(w[i][j]),um])
+            res += [cvx.SOC(up,st)]    
+       
+        
+pl=cvx.real(cvx.trace(w@ym.conjugate()))
+ql=cvx.imag(cvx.trace(w@ym.conjugate())) 
+
+
+res +=  [pl>=0]
+res +=  [ql>=0]
+res +=  [cvx.real(cvx.sum((sref*svect)-sd))>=0]
+res +=  [cvx.imag(cvx.sum((sref*svect)-sd))>=0]
+           
+"-------Objective definition--------"
+#obj = cvx.Minimize(cvx.abs(sref[0]))
+#obj = cvx.Minimize(cvx.real(cvx.sum(sref))+cvx.imag(cvx.sum(sref)))
+obj = cvx.Minimize(pl+ql)
+#obj = cvx.Minimize(1)
+
+"-------Problem/solver Setup--------"
+OPFSOC = cvx.Problem(obj,res)
+OPFSOC.solve(solver=cvx.MOSEK,accept_unknown=True,mosek_params = {'MSK_IPAR_INTPNT_SOLVE_FORM':'MSK_SOLVE_DUAL','MSK_IPAR_PRESOLVE_USE':'MSK_PRESOLVE_MODE_ON','MSK_DPAR_PRESOLVE_TOL_X':1e-10},verbose=True)    
+#OPFSOC.solve(solver=cvx.ECOS,verbose=True)
+#OPFSOC.solve(solver=cvx.GUROBI,verbose=True)
+#print(OPFSOC.status,obj.value,OPFSOC.solver_stats.solve_time)
+
+"----- Print results -----"
+
+t=np.zeros(num_nodes)
+t[0]=OPFSOC.solver_stats.solve_time
+
+wo= w.value
+uo=np.real(np.diag(wo))
+v= np.sqrt(uo)
+
+pg=np.real(sref.value)*svect
+qg=np.imag(sref.value)*svect
+sg=np.sqrt(np.square(pg)+np.square(qg))
+sgref=sref.value
+
+plt.plot(v)
+
+
+Equp=np.diag(np.real(wo@ym.conjugate()))
+Equq=np.diag(np.imag(wo@ym.conjugate()))
+ploss=np.zeros(num_nodes)
+qloss=np.zeros(num_nodes)
+ploss[0]=np.sum(Equp)
+qloss[0]=np.sum(Equq)
+
+ph=np.zeros(num_nodes)
+
+for i in range(num_lines):
+    to=branch['j'][i]-1
+    fr=branch['i'][i]-1
+    ph[to]=ph[fr]-np.angle(wo[to][fr])
+
+vrec=(v*np.cos(ph)+1j*v*np.sin(ph))
+
+sinfeas1=np.zeros(num_nodes,dtype='complex')
+sinfeas2=np.zeros(num_nodes,dtype='complex')
+pinfeas1=np.zeros(num_nodes)
+pinfeas2=np.zeros(num_nodes)
+qinfeas1=np.zeros(num_nodes)
+qinfeas2=np.zeros(num_nodes)
+
+
+pinfeas1=pg-Equp-np.real(sd)
+qinfeas1=qg-Equq-np.imag(sd)
+
+equ2= np.multiply(vrec,np.matmul(ym.conjugate(),vrec.conjugate()))   
+pinfeas2=(pg*svect)-np.real(equ2)-np.real(sd)
+qinfeas2=(qg*svect)-np.imag(equ2)-np.imag(sd)
+   
+output=np.vstack((v,ph,Equp,Equq,ploss,qloss,pg,qg,pinfeas1,pinfeas2,qinfeas1,qinfeas2,t)).T
+df=pd.DataFrame(output)
+columns=[]
+columns.append('v')
+columns.append('ph')
+columns.append('eqp')
+columns.append('eqq')
+columns.append('pl')
+columns.append('ql')
+columns.append('pg')
+columns.append('qg')
+columns.append('pinf1')
+columns.append('pinf2')
+columns.append('qinf1')
+columns.append('qinf2')
+columns.append('t')
+    
+df.columns=columns
+
+solvlist=[0]*num_nodes
+solvlist[0]='CM'
+
+
+df.insert(len(df.columns),'Solver',solvlist)
+
+df.to_excel("Results.xlsx")
+

@@ -1,0 +1,21 @@
+,$x$,F,I/S,$\overline{SSE}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$\overline{SSE}$,RRM,AI,$\cellcolor{green}1.4e-17$,$6.03e+01$,$5.03e-11$,$5.7e-11$,$2.42e-36$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}3.51e-02$,$9.99e-08$,$9.99e-08$,$0.e+00$
+,Inf1,RRM,AI,$1.4e-17$,$6.03e+01$,$\cellcolor{green}5.03e-11$,$5.7e-11$,$2.42e-36$
+,Inf2,RRM,AI,$1.4e-17$,$6.03e+01$,$5.03e-11$,$\cellcolor{green}5.7e-11$,$2.42e-36$
+,$\Pi |x|$,RRM,AI,$1.4e-17$,$6.03e+01$,$5.03e-11$,$5.7e-11$,$\cellcolor{green}2.42e-36$
+\multirow{5}{*}{IEEE69},$\overline{SSE}$,RRM,AI,$\cellcolor{green}1.19e-13$,$2.35e+02$,$3.65e-09$,$1.31e-06$,$1.33e-25$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}3.69e-02$,$3.49e-08$,$3.49e-08$,$0.e+00$
+,Inf1,RRM,AI,$1.19e-13$,$2.35e+02$,$\cellcolor{green}3.65e-09$,$1.31e-06$,$1.33e-25$
+,Inf2,MAT,*,$0.e+00$,$3.69e-02$,$3.49e-08$,$\cellcolor{green}3.49e-08$,$0.e+00$
+,$\Pi |x|$,RRM,AI,$1.19e-13$,$2.35e+02$,$3.65e-09$,$1.31e-06$,$\cellcolor{green}1.33e-25$
+\multirow{5}{*}{SA},$\overline{SSE}$,PM,AI,$\cellcolor{green}4.16e-10$,$2.97e-01$,$2.86e-04$,$2.86e-04$,$1.01e-17$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}2.39e-02$,$8.01e-07$,$8.01e-07$,$0.e+00$
+,Inf1,MAT,*,$0.e+00$,$2.39e-02$,$\cellcolor{green}8.01e-07$,$8.01e-07$,$0.e+00$
+,Inf2,MAT,*,$0.e+00$,$2.39e-02$,$8.01e-07$,$\cellcolor{green}8.01e-07$,$0.e+00$
+,$\Pi |x|$,PBIM,AI,$4.16e-10$,$2.65e-01$,$2.86e-04$,$2.86e-04$,$\cellcolor{green}9.01e-18$
+\multirow{5}{*}{CA141},$\overline{SSE}$,RRM,AI,$\cellcolor{green}7.24e-13$,$2.83e+02$,$6.67e-08$,$3.75e-06$,$5.13e-23$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}4.84e-02$,$1.09e-06$,$1.09e-06$,$0.e+00$
+,Inf1,RRM,AI,$7.24e-13$,$2.83e+02$,$\cellcolor{green}6.67e-08$,$3.75e-06$,$5.13e-23$
+,Inf2,MAT,*,$0.e+00$,$4.84e-02$,$1.09e-06$,$\cellcolor{green}1.09e-06$,$0.e+00$
+,$\Pi |x|$,RRM,AI,$7.24e-13$,$2.83e+02$,$6.67e-08$,$3.75e-06$,$\cellcolor{green}5.13e-23$

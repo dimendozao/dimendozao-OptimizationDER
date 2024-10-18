@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,RERCM,CM,$\cellcolor{green}3.77e+00$,$1.39e+02$,$3.62e-04$,$7.39e-04$,$1.4e-04$
+,$t[s]$,REBF,G,$3.80e+00$,$\cellcolor{green}1.32e+00$,$7.23e-08$,$2.96e-06$,$1.07e-12$
+,Inf1,Meta-GWO,GWO_PAR,$3.87e+00$,$9.79e+01$,$\cellcolor{green}1.49e-08$,$1.49e-08$,$8.44e-14$
+,Inf2,Meta-GWO,GWO_PAR,$3.87e+00$,$9.79e+01$,$1.49e-08$,$\cellcolor{green}1.49e-08$,$8.44e-14$
+,$\Pi |x|$,Meta-GWO,GWO_PAR,$3.87e+00$,$9.79e+01$,$1.49e-08$,$1.49e-08$,$\cellcolor{green}8.44e-14$

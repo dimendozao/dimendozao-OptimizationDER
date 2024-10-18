@@ -1,0 +1,2 @@
+Solucion inexacta
+La funcion objetivo cambio a min abs(sum(sloss))

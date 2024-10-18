@@ -1,0 +1,21 @@
+,$x$,F,I/S,Gap,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,REBF,G,$7.45e-02$,$\cellcolor{green}1.67e+00$,$2.16e+04$,$4.94e-06$,$7.83e-04$,$1.39e-04$
+,$t[s]$,Meta,GWO_PAR,*,$2.59e+00$,$\cellcolor{green}1.30e+02$,$2.21e-08$,$2.21e-08$,$1.65e-13$
+,Inf1,PM,AB,$1.39e-01$,$1.72e+00$,$2.16e+04$,$\cellcolor{green}1.43e-11$,$1.45e-11$,$7.7e-18$
+,Inf2,PM,AB,$1.39e-01$,$1.72e+00$,$2.16e+04$,$1.43e-11$,$\cellcolor{green}1.45e-11$,$7.7e-18$
+,$\Pi |x|$,PM,AB,$1.39e-01$,$1.72e+00$,$2.16e+04$,$1.43e-11$,$1.45e-11$,$\cellcolor{green}7.7e-18$
+\multirow{5}{*}{IEEE69},$P_{loss}$,REBF,G,$1.02e-01$,$\cellcolor{green}1.53e+00$,$2.16e+04$,$2.29e-08$,$2.19e-06$,$1.66e-09$
+,$t[s]$,Meta,GWO_PAR,*,$2.44e+00$,$\cellcolor{green}1.41e+02$,$2.98e-08$,$3.05e-08$,$3.13e-13$
+,Inf1,PM,AB,$3.21e-02$,$1.63e+00$,$2.16e+04$,$\cellcolor{green}1.05e-09$,$1.11e-09$,$4.09e-14$
+,Inf2,PM,AB,$3.21e-02$,$1.63e+00$,$2.16e+04$,$1.05e-09$,$\cellcolor{green}1.11e-09$,$4.09e-14$
+,$\Pi |x|$,PM,AB,$3.21e-02$,$1.63e+00$,$2.16e+04$,$1.05e-09$,$1.11e-09$,$\cellcolor{green}4.09e-14$
+\multirow{5}{*}{SA},$P_{loss}$,PM,AB,$0.e+00$,$\cellcolor{green}2.72e-02$,$1.88e+04$,$8.66e-09$,$8.72e-09$,$3.86e-14$
+,$t[s]$,Meta,GWO_PAR,*,$4.78e-02$,$\cellcolor{green}1.21e+02$,$1.17e-07$,$1.14e-07$,$7.69e-14$
+,Inf1,PM,AB,$0.e+00$,$2.72e-02$,$1.88e+04$,$\cellcolor{green}8.66e-09$,$8.72e-09$,$3.86e-14$
+,Inf2,PM,AB,$0.e+00$,$2.72e-02$,$1.88e+04$,$8.66e-09$,$\cellcolor{green}8.72e-09$,$3.86e-14$
+,$\Pi |x|$,PM,AB,$0.e+00$,$2.72e-02$,$1.88e+04$,$8.66e-09$,$8.72e-09$,$\cellcolor{green}3.86e-14$
+\multirow{5}{*}{CA141},$P_{loss}$,PM,AB,$8.55e-02$,$\cellcolor{green}5.66e+00$,$2.16e+04$,$5.74e-06$,$5.73e-06$,$4.02e-06$
+,$t[s]$,Meta,GWO_PAR,*,$7.24e+00$,$\cellcolor{green}1.77e+02$,$1.71e-07$,$5.72e-08$,$1.26e-11$
+,Inf1,Meta,GWO_PAR,*,$7.24e+00$,$1.77e+02$,$\cellcolor{green}1.71e-07$,$5.72e-08$,$1.26e-11$
+,Inf2,Meta,GWO_PAR,*,$7.24e+00$,$1.77e+02$,$1.71e-07$,$\cellcolor{green}5.72e-08$,$1.26e-11$
+,$\Pi |x|$,Meta,GWO_PAR,*,$7.24e+00$,$1.77e+02$,$1.71e-07$,$5.72e-08$,$\cellcolor{green}1.26e-11$

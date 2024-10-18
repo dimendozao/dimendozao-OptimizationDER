@@ -1,0 +1,10 @@
+Se resolvio el problema dual
+
+el objetivo cambio a sum (gen)
+
+las variables se hicieron dispersas.
+
+las restricciones conicas se icieron dispersas
+
+no se hizo multiples optimizaciones.
+

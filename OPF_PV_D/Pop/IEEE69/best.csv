@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE69},$P_{loss}$,Meta-GA,GA_PAR,$\cellcolor{green}2.48e+00$,$9.5e+01$,$3.04e-08$,$3.09e-08$,$2.21e-13$
+,$t[s]$,Meta-GA,GA_PAR,$2.48e+00$,$\cellcolor{green}9.5e+01$,$3.04e-08$,$3.09e-08$,$2.21e-13$
+,Inf1,Meta-GWO,GWO_PAR,$2.49e+00$,$1.16e+02$,$\cellcolor{green}2.98e-08$,$3.05e-08$,$2.62e-13$
+,Inf2,Meta-GWO,GWO_PAR,$2.49e+00$,$1.16e+02$,$2.98e-08$,$\cellcolor{green}3.05e-08$,$2.62e-13$
+,$\Pi |x|$,Meta-GA,GA_PAR,$2.48e+00$,$9.5e+01$,$3.04e-08$,$3.09e-08$,$\cellcolor{green}2.21e-13$

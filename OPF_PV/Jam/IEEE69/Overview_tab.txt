@@ -1,0 +1,22 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ & I/S & $P_{loss}$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+PM & AB & \cellcolor{green}$1.23e-01$ & \cellcolor{yellow}$3.6e-01$ & $9.46e-08$ & $9.46e-08$ & $3.97e-16$ \\
+RM & AB & $1.23e-01$ & \cellcolor{green}$3.59e-01$ & $8.25e-08$ & $8.24e-08$ & $3.01e-16$ \\
+RRM & AB & $1.23e-01$ & $9.70e+00$ & \cellcolor{yellow}$1.38e-10$ & $4.09e-08$ & \cellcolor{red}$6.78e-18$ \\
+PBIM & AB & \cellcolor{yellow}$1.23e-01$ & \cellcolor{red}$3.75e-01$ & $9.46e-08$ & $9.46e-08$ & $4.14e-16$ \\
+RBIM & AB & \cellcolor{red}$1.23e-01$ & $3.75e-01$ & $3.24e-08$ & \cellcolor{red}$3.23e-08$ & $4.84e-17$ \\
+RRBIM & AB & $1.23e-01$ & $8.73e+00$ & \cellcolor{green}$1.22e-10$ & $6.22e-08$ & $8.16e-18$ \\
+BF & G & $1.23e-01$ & $6.37e-01$ & $2.31e-06$ & $1.49e+01$ & $2.71e-06$ \\
+RERCM & CM & $7.54e-02$ & $4.54e-01$ & $1.89e+00$ & $2.03e+00$ & $1.31e-01$ \\
+RERRM & CM & $-2.17e+00$ & $1.03e+00$ & $2.39e+00$ & $4.88e+01$ & $2.60e+02$ \\
+RERCBIM & CM & $1.08e-01$ & $3.44e-01$ & $1.82e-02$ & $4.93e-02$ & $3.33e-05$ \\
+RERRBIM & CM & $1.12e-01$ & $6.56e-01$ & $5.82e-02$ & $1.03e-01$ & $4.37e-04$ \\
+REBF & G & $1.23e-01$ & $1.02e-01$ & $8.43e-09$ & $1.49e+01$ & $1.58e-09$ \\
+Meta-GA & GA_PAR & $1.23e-01$ & $7.81e+00$ & $5.00e-08$ & $5.e-08$ & $2.41e-15$ \\
+Meta-GWO & GWO_PAR & $1.24e-01$ & $1.88e+01$ & $5.06e-08$ & $5.06e-08$ & $5.98e-15$ \\
+Meta-PSO & PSO_PAR & $1.24e-01$ & $7.73e+00$ & \cellcolor{red}$2.97e-10$ & \cellcolor{yellow}$2.09e-10$ & \cellcolor{green}$5.93e-20$ \\
+Meta-WOA & WOA_PAR & $1.26e-01$ & $1.83e+01$ & $3.01e-10$ & \cellcolor{green}$1.94e-10$ & \cellcolor{yellow}$1.35e-19$ \\
+\bottomrule
+\end{tabular}

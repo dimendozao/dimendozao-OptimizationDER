@@ -1,0 +1,6 @@
+,$x$,F,I/S,Gap,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{CA141},$P_{loss}$,PM,AB,$1.01e-01$,$\cellcolor{green}1.00e+01$,$2.33e+04$,$6.08e-06$,$6.08e-06$,$8.65e-06$
+,$t[s]$,Meta,GWO_PAR,*,$1.24e+01$,$\cellcolor{green}2.95e+02$,$2.34e-07$,$1.46e-07$,$1.25e-10$
+,Inf1,Meta,GWO_PAR,*,$1.24e+01$,$2.95e+02$,$\cellcolor{green}2.34e-07$,$1.46e-07$,$1.25e-10$
+,Inf2,Meta,GWO_PAR,*,$1.24e+01$,$2.95e+02$,$2.34e-07$,$\cellcolor{green}1.46e-07$,$1.25e-10$
+,$\Pi |x|$,Meta,GWO_PAR,*,$1.24e+01$,$2.95e+02$,$2.34e-07$,$1.46e-07$,$\cellcolor{green}1.25e-10$

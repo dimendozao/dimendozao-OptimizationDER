@@ -1,0 +1,9 @@
+So utilizó la formulación de periodo sencillo y se realizó la optimización iterativamente.
+
+la funcion objetivo cambió a min sum(gen)
+la respuesta se encontro optimizando el problema dual.
+se agregaron restricciones de perdidas positivas
+la solución en algunos casos fue inexacta.
+
+
+

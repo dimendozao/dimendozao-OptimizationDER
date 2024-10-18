@@ -1,0 +1,4 @@
+las restricciones conicas se hicieron dispersas
+
+se hizo multiples optimizaciones.
+

@@ -1,0 +1,4 @@
+
+la respuesta se encontro optimizando el problema dual.
+se limitaron las restricciones conicas a la matriz de incidencia off diagonal
+

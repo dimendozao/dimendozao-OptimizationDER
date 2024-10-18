@@ -1,0 +1,6 @@
+,$x$,F,I/S,$\overline{SSE}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{CA141},$\overline{SSE}$,RRM,AI,$\cellcolor{green}2.28e-16$,$3.28e+02$,$4.96e-08$,$9.42e-08$,$3.50e-28$
+,$t[s]$,MAT,*,$0.e+00$,$\cellcolor{green}4.4e-02$,$5.95e-07$,$5.95e-07$,$0.e+00$
+,Inf1,RRM,AI,$2.28e-16$,$3.28e+02$,$\cellcolor{green}4.96e-08$,$9.42e-08$,$3.50e-28$
+,Inf2,RRM,AI,$2.28e-16$,$3.28e+02$,$4.96e-08$,$\cellcolor{green}9.42e-08$,$3.50e-28$
+,$\Pi |x|$,RRM,AI,$2.28e-16$,$3.28e+02$,$4.96e-08$,$9.42e-08$,$\cellcolor{green}3.50e-28$

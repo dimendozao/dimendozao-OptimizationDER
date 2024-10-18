@@ -1,0 +1,6 @@
+solución inexacta (infactible)
+resolvio problema dual
+presolve On
+objetivo sum (gen)
+q limite inferior 0 (normal -100)
+

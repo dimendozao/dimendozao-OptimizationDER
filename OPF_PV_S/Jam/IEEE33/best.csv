@@ -1,0 +1,8 @@
+,$x$,F,I/S,$P_{loss}$,$\Sigma p(I_{pv})$,$1/\Sigma p(DC)$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{7}{*}{IEEE33},$P_{loss}$,Meta,GWO_PAR,$\cellcolor{green}5.57e+00$,$7.35e-01$,$9.86e-03$,$1.54e+02$,$3.20e-08$,$3.2e-08$,$6.35e-15$
+,$\Sigma p(I_{pv})$,PM,AB,$5.76e+00$,$\cellcolor{green}1.58e-01$,$9.12e-03$,$1.55e+01$,$7.85e-07$,$7.85e-07$,$7.94e-14$
+,$1/\Sigma p(DC)$,REBF,G,$6.52e+00$,$1.89e-01$,$\cellcolor{green}8.65e-03$,$3.77e+01$,$6.06e-07$,$1.08e-05$,$2.64e-12$
+,$t[s]$,PM,AB,$5.76e+00$,$1.58e-01$,$9.12e-03$,$\cellcolor{green}1.55e+01$,$7.85e-07$,$7.85e-07$,$7.94e-14$
+,Inf1,Meta,GWO_PAR,$5.57e+00$,$7.35e-01$,$9.86e-03$,$1.54e+02$,$\cellcolor{green}3.20e-08$,$3.2e-08$,$6.35e-15$
+,Inf2,Meta,GWO_PAR,$5.57e+00$,$7.35e-01$,$9.86e-03$,$1.54e+02$,$3.20e-08$,$\cellcolor{green}3.2e-08$,$6.35e-15$
+,$\Pi |x|$,Meta,GWO_PAR,$5.57e+00$,$7.35e-01$,$9.86e-03$,$1.54e+02$,$3.20e-08$,$3.2e-08$,$\cellcolor{green}6.35e-15$

@@ -1,0 +1,4 @@
+resolvio problema dual
+presolve On
+
+

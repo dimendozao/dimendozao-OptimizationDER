@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{SA},$P_{loss}$,RM,AB,$\cellcolor{green}6.48e-02$,$5.77e+02$,$3.49e-07$,$3.48e-07$,$4.54e-12$
+,$t[s]$,Meta-GA,GA_PAR,$6.49e-02$,$\cellcolor{green}7.16e+01$,$6.1e-07$,$6.07e-07$,$1.72e-12$
+,Inf1,PM,AB,$6.48e-02$,$2.e+02$,$\cellcolor{green}3.24e-07$,$3.24e-07$,$1.36e-12$
+,Inf2,PM,AB,$6.48e-02$,$2.e+02$,$3.24e-07$,$\cellcolor{green}3.24e-07$,$1.36e-12$
+,$\Pi |x|$,PBIM,AB,$6.48e-02$,$1.47e+02$,$3.76e-07$,$3.77e-07$,$\cellcolor{green}1.35e-12$

@@ -1,0 +1,14 @@
+\begin{tabular}{|c c|}
+\toprule
+Variables & Values \\
+\midrule
+$P_{loss}$ & $2.2427e-03$ \\
+$(Loc1,Cap1)$ & $(1,6.9066e-09)$ \\
+$(Loc2,Cap2)$ & $(22,1.4472e-01)$ \\
+$(Loc3,Cap3)$ & $(31,2.5263e-01)$ \\
+$(Loc4,Cap4)$ & $(32,2.3800e-01)$ \\
+$\Sigma (z_{i}^{pv},CP_{i})$ & $(4,6.3535e-01)$ \\
+$V_{max}$ & $1.e+00$ \\
+$V_{min}$ & $9.9734e-01$ \\
+\bottomrule
+\end{tabular}

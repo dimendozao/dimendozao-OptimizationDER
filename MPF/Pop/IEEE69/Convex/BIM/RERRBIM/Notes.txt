@@ -1,0 +1,14 @@
+solved with gurobi
+
+the objective function changed to min sum (gen)
+
+parameters: 
+
+m.setParam('Aggregate',0)
+m.setParam('Presolve',0)
+m.setParam('BarConvTol',1e-15)
+m.setParam('NumericFocus',3)
+m.setParam('BarHomogeneous',1)
+m.setParam('MIPFocus',2)
+m.setParam('MIPGap',1e-6)
+m.setParam("TimeLimit", 120);

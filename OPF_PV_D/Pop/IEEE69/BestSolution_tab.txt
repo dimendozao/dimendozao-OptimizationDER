@@ -1,0 +1,16 @@
+\begin{tabular}{|c c|}
+\toprule
+Variables & Values \\
+\midrule
+$P_{loss}$ & $2.4829e+00$ \\
+$(Loc1,Cap1)$ & $(8,9.433e-09)$ \\
+$(Loc2,Cap2)$ & $(61,5.8946e-06)$ \\
+$(Loc3,Cap3)$ & $(62,2.8723e-05)$ \\
+$(Loc4,Cap4)$ & $(65,1.9453e+00)$ \\
+$(Loc5,Cap5)$ & $(68,2.2686e-05)$ \\
+$(Loc6,Cap6)$ & $(69,4.8313e-06)$ \\
+$\Sigma (z_{i}^{pv},CP_{i})$ & $(6,1.9453e+00)$ \\
+$V_{max}$ & $1.e+00$ \\
+$V_{min}$ & $8.8641e-01$ \\
+\bottomrule
+\end{tabular}

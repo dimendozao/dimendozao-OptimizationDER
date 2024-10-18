@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{SA},$P_{loss}$,Meta-GWO,GWO_PAR,$\cellcolor{green}4.11e-02$,$8.31e+01$,$3.23e-07$,$3.21e-07$,$3.54e-13$
+,$t[s]$,Meta-PSO,PSO_PAR,$4.11e-02$,$\cellcolor{green}6.89e+01$,$3.23e-07$,$3.20e-07$,$2.93e-13$
+,Inf1,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$\cellcolor{green}3.23e-07$,$3.20e-07$,$2.93e-13$
+,Inf2,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$3.23e-07$,$\cellcolor{green}3.20e-07$,$2.93e-13$
+,$\Pi |x|$,Meta-PSO,PSO_PAR,$4.11e-02$,$6.89e+01$,$3.23e-07$,$3.20e-07$,$\cellcolor{green}2.93e-13$

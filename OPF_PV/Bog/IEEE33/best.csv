@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,RERCM,CM,$\cellcolor{green}1.05e-01$,$1.25e-01$,$6.86e-05$,$2.31e-05$,$2.08e-11$
+,$t[s]$,RERCM,CM,$1.05e-01$,$\cellcolor{green}1.25e-01$,$6.86e-05$,$2.31e-05$,$2.08e-11$
+,Inf1,RRBIM,AB,$1.05e-01$,$1.89e+00$,$\cellcolor{green}3.33e-10$,$3.34e-10$,$2.20e-20$
+,Inf2,RRBIM,AB,$1.05e-01$,$1.89e+00$,$3.33e-10$,$\cellcolor{green}3.34e-10$,$2.20e-20$
+,$\Pi |x|$,RRBIM,AB,$1.05e-01$,$1.89e+00$,$3.33e-10$,$3.34e-10$,$\cellcolor{green}2.20e-20$

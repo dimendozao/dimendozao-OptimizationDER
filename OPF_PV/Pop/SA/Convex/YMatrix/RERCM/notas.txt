@@ -1,0 +1,10 @@
+se agrego dos restricciones de perdidas positivas:
+
+pl>=0
+ql>=0
+
+pg+(pv*rad)-pd>=0
+qg-qd>=0
+
+
+solución inexacta (infactible)

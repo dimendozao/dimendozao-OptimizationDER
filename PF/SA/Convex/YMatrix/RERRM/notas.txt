@@ -1,0 +1,5 @@
+solver ampl
+
+se agrega restriccionees de perdidas positivas
+
+la solución no es cercana

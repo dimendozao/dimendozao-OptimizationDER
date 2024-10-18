@@ -1,0 +1,9 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ & I/S & $P_{loss}$ & $\Sigma p(I_{pv})$ & $1/\Sigma p(DC)$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+PM & AB & \cellcolor{yellow}$0.1127$ & \cellcolor{green}$0.0096$ & \cellcolor{green}$0.0087$ & \cellcolor{green}$49.75$ & \cellcolor{green}$4.31e-07$ & \cellcolor{green}$4.31e-07$ & \cellcolor{green}$8.73e-17$ \\
+REBF & G & \cellcolor{red}$0.116$ & \cellcolor{red}$0.0094$ & \cellcolor{red}$0.0086$ & \cellcolor{yellow}$1.6670$ & \cellcolor{red}$6.91e-10$ & \cellcolor{red}$1.14e-01$ & \cellcolor{red}$1.22e-15$ \\
+Meta & GWO_PAR & \cellcolor{green}$0.0857$ & \cellcolor{yellow}$2.5319$ & \cellcolor{yellow}$0.0093$ & \cellcolor{red}$127.3368$ & \cellcolor{yellow}$8.06e-07$ & \cellcolor{yellow}$8.03e-07$ & \cellcolor{yellow}$1.67e-13$ \\
+\bottomrule
+\end{tabular}

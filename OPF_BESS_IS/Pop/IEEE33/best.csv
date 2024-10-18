@@ -1,0 +1,6 @@
+,$x$,F,I/S,Gap,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE33},$P_{loss}$,REBF,G,$1.35e-01$,$\cellcolor{green}3.24e+00$,$2.16e+04$,$5.52e-07$,$7.19e-06$,$2.77e-07$
+,$t[s]$,Meta,GWO_PAR,*,$4.91e+00$,$\cellcolor{green}1.61e+02$,$1.18e-08$,$1.18e-08$,$1.11e-13$
+,Inf1,Meta,GWO_PAR,*,$4.91e+00$,$1.61e+02$,$\cellcolor{green}1.18e-08$,$1.18e-08$,$1.11e-13$
+,Inf2,Meta,GWO_PAR,*,$4.91e+00$,$1.61e+02$,$1.18e-08$,$\cellcolor{green}1.18e-08$,$1.11e-13$
+,$\Pi |x|$,Meta,GWO_PAR,*,$4.91e+00$,$1.61e+02$,$1.18e-08$,$1.18e-08$,$\cellcolor{green}1.11e-13$

@@ -1,0 +1,6 @@
+,$x$,F,I/S,Gap,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{SA},$P_{loss}$,PM,AB,$0.e+00$,$\cellcolor{green}7.82e-02$,$5.82e+02$,$5.38e-10$,$7.30e-10$,$1.79e-17$
+,$t[s]$,Meta,GWO_PAR,*,$9.04e-02$,$\cellcolor{green}2.86e+02$,$2.93e-07$,$2.9e-07$,$2.2e-12$
+,Inf1,PM,AB,$0.e+00$,$7.82e-02$,$5.82e+02$,$\cellcolor{green}5.38e-10$,$7.30e-10$,$1.79e-17$
+,Inf2,PM,AB,$0.e+00$,$7.82e-02$,$5.82e+02$,$5.38e-10$,$\cellcolor{green}7.30e-10$,$1.79e-17$
+,$\Pi |x|$,PM,AB,$0.e+00$,$7.82e-02$,$5.82e+02$,$5.38e-10$,$7.30e-10$,$\cellcolor{green}1.79e-17$

@@ -1,0 +1,1 @@
+las variables, las sumas en restricciones y las restricciones conicas se hicieron dispersas

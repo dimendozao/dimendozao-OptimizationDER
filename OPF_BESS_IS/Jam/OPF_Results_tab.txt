@@ -1,0 +1,26 @@
+\begin{tabular}{|c| c c c c c c c c|}
+\toprule
+ & $x$ & F & I/S & Gap & $P_{loss}$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+\multirow{5}{*}{IEEE33} & $P_{loss}$ & PM & AB & $8.94e-02$ & $\cellcolor{green}4.19e+00$ & $2.16e+04$ & $3.66e-08$ & $3.66e-08$ & $1.21e-10$ \\
+NaN & $t[s]$ & Meta & GWO_PAR & * & $6.06e+00$ & $\cellcolor{green}1.51e+02$ & $1.91e-08$ & $1.90e-08$ & $3.32e-13$ \\
+NaN & Inf1 & Meta & GWO_PAR & * & $6.06e+00$ & $1.51e+02$ & $\cellcolor{green}1.91e-08$ & $1.90e-08$ & $3.32e-13$ \\
+NaN & Inf2 & Meta & GWO_PAR & * & $6.06e+00$ & $1.51e+02$ & $1.91e-08$ & $\cellcolor{green}1.90e-08$ & $3.32e-13$ \\
+NaN & $\Pi |x|$ & Meta & GWO_PAR & * & $6.06e+00$ & $1.51e+02$ & $1.91e-08$ & $1.90e-08$ & $\cellcolor{green}3.32e-13$ \\
+\multirow{5}{*}{IEEE69} & $P_{loss}$ & REBF & G & $1.39e-01$ & $\cellcolor{green}3.5e+00$ & $2.16e+04$ & $9.44e-07$ & $5.3e-06$ & $3.78e-07$ \\
+NaN & $t[s]$ & Meta & GWO_PAR & * & $5.74e+00$ & $\cellcolor{green}1.72e+02$ & $4.41e-08$ & $4.42e-08$ & $1.93e-12$ \\
+NaN & Inf1 & PM & AB & $3.55e-02$ & $3.81e+00$ & $2.16e+04$ & $\cellcolor{green}1.11e-09$ & $1.27e-09$ & $1.16e-13$ \\
+NaN & Inf2 & PM & AB & $3.55e-02$ & $3.81e+00$ & $2.16e+04$ & $1.11e-09$ & $\cellcolor{green}1.27e-09$ & $1.16e-13$ \\
+NaN & $\Pi |x|$ & PM & AB & $3.55e-02$ & $3.81e+00$ & $2.16e+04$ & $1.11e-09$ & $1.27e-09$ & $\cellcolor{green}1.16e-13$ \\
+\multirow{5}{*}{SA} & $P_{loss}$ & PM & AB & $6.55e-03$ & $\cellcolor{green}8.59e-02$ & $2.16e+04$ & $3.45e-08$ & $3.43e-08$ & $2.2e-12$ \\
+NaN & $t[s]$ & Meta & GWO_PAR & * & $1.31e-01$ & $\cellcolor{green}1.53e+02$ & $1.96e-07$ & $1.92e-07$ & $7.53e-13$ \\
+NaN & Inf1 & PM & AB & $6.55e-03$ & $8.59e-02$ & $2.16e+04$ & $\cellcolor{green}3.45e-08$ & $3.43e-08$ & $2.2e-12$ \\
+NaN & Inf2 & PM & AB & $6.55e-03$ & $8.59e-02$ & $2.16e+04$ & $3.45e-08$ & $\cellcolor{green}3.43e-08$ & $2.2e-12$ \\
+NaN & $\Pi |x|$ & Meta & GWO_PAR & * & $1.31e-01$ & $1.53e+02$ & $1.96e-07$ & $1.92e-07$ & $\cellcolor{green}7.53e-13$ \\
+\multirow{5}{*}{CA141} & $P_{loss}$ & PM & AB & $2.54e-01$ & $\cellcolor{green}1.08e+01$ & $2.17e+04$ & $1.14e-06$ & $1.13e-06$ & $3.04e-07$ \\
+NaN & $t[s]$ & Meta & GWO_PAR & * & $1.47e+01$ & $\cellcolor{green}2.01e+02$ & $2.35e-07$ & $1.39e-07$ & $9.64e-11$ \\
+NaN & Inf1 & Meta & GWO_PAR & * & $1.47e+01$ & $2.01e+02$ & $\cellcolor{green}2.35e-07$ & $1.39e-07$ & $9.64e-11$ \\
+NaN & Inf2 & Meta & GWO_PAR & * & $1.47e+01$ & $2.01e+02$ & $2.35e-07$ & $\cellcolor{green}1.39e-07$ & $9.64e-11$ \\
+NaN & $\Pi |x|$ & Meta & GWO_PAR & * & $1.47e+01$ & $2.01e+02$ & $2.35e-07$ & $1.39e-07$ & $\cellcolor{green}9.64e-11$ \\
+\bottomrule
+\end{tabular}

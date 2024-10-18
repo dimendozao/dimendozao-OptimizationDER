@@ -1,0 +1,6 @@
+,$x$,F,I/S,$P_{loss}$,$t[s]$,Inf1,Inf2,$\Pi |x|$
+\multirow{5}{*}{IEEE69},$P_{loss}$,PM,AB,$\cellcolor{green}3.17e+00$,$6.58e+00$,$1.47e-06$,$1.47e-06$,$4.51e-11$
+,$t[s]$,REBF,G,$3.17e+00$,$\cellcolor{green}1.94e+00$,$7.89e-09$,$1.04e-06$,$5.05e-14$
+,Inf1,REBF,G,$3.17e+00$,$1.94e+00$,$\cellcolor{green}7.89e-09$,$1.04e-06$,$5.05e-14$
+,Inf2,RRBIM,AB,$3.17e+00$,$5.55e+00$,$3.34e-08$,$\cellcolor{green}3.27e-08$,$1.92e-14$
+,$\Pi |x|$,RRBIM,AB,$3.17e+00$,$5.55e+00$,$3.34e-08$,$3.27e-08$,$\cellcolor{green}1.92e-14$

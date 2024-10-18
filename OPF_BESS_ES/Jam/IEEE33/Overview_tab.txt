@@ -1,0 +1,9 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ & I/S & Gap & $P_{loss}$ & $t[s]$ & Inf1 & Inf2 & $\Pi |x|$ \\
+\midrule
+PM & AB & $0.e+00$ & \cellcolor{red}$32911.43$ & \cellcolor{yellow}$3237.266$ & \cellcolor{red}$5.01e+04$ & \cellcolor{red}$5.01e+04$ & \cellcolor{red}$2.67e+17$ \\
+REBF & G & $4.48e-01$ & \cellcolor{green}$4.9878$ & \cellcolor{red}$21603.4390$ & \cellcolor{yellow}$2.86e-06$ & \cellcolor{yellow}$4.03e-06$ & \cellcolor{yellow}$1.24e-06$ \\
+Meta & GWO_PAR & * & \cellcolor{yellow}$6.4264$ & \cellcolor{green}$258.0806$ & \cellcolor{green}$2.99e-08$ & \cellcolor{green}$2.99e-08$ & \cellcolor{green}$1.48e-12$ \\
+\bottomrule
+\end{tabular}

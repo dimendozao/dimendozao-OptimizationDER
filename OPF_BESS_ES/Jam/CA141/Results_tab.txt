@@ -1,0 +1,9 @@
+\begin{tabular}{|c| c c c c c c|}
+\toprule
+ & $\Delta v$ & $\Delta \phi$ & $\Delta P_{loss}$ & $\Delta Q_{loss}$ & $\Delta P^{g}$ & $\Delta Q^{g}$ \\
+\midrule
+PM & $3.06e+03$ & $5.39e-02$ & $7.72e+07$ & $3.88e+07$ & $3.44e+03$ & $1.40e+03$ \\
+REBF & $0.e+00$ & $0.e+00$ & $0.e+00$ & $0.e+00$ & $0.e+00$ & $0.e+00$ \\
+Meta & $7.41e-01$ & $5.06e-01$ & $2.09e+00$ & $1.12e+00$ & $9.14e+02$ & $1.12e+00$ \\
+\bottomrule
+\end{tabular}

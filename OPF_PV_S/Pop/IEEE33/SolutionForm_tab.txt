@@ -1,0 +1,13 @@
+\begin{tabular}{|c c|}
+\toprule
+Variables & Values \\
+\midrule
+$f_{o}$ & $-1.1148e+02$ \\
+$P_{loss}$ & $4.8982e+00$ \\
+$-\Sigma p(DC)$ & $-1.165e+02$ \\
+$\Sigma p(I_{pv})$ & $1.1972e-01$ \\
+$\Sigma (z_{i}^{pv},CP_{i})$ & $(16,1.8427e+00)$ \\
+$V_{max}$ & $1.e+00$ \\
+$V_{min}$ & $8.752e-01$ \\
+\bottomrule
+\end{tabular}
